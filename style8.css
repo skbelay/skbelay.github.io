@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(255, 228, 207);
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -7,6 +7,5 @@ body {
       }
 a {
     color: white;
-
 
 }

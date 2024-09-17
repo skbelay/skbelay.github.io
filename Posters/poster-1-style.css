@@ -1,0 +1,62 @@
+body{background:black;}
+h1{margin:0px;}
+
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    bottom:20px;
+
+  }
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+h1{
+    font-size:100px;
+    color:white;
+    position:absolute;
+    top:200px;
+    left:50px;
+    transform:rotate(-90deg);
+}
+h2{
+  font-size:40px;
+  font-family: Helvetica, sans-serif;
+  color:white;
+  position:absolute;
+  line-height:35px;
+  top:175px;
+  left:175px;
+}
+
+.description {
+  font-size:15px;
+  font-family: Helvetica, sans-serif;
+  color:white;
+  position:absolute;
+  top:530px;
+  left:175px;
+}
+
+
+.container{
+  background:rgb(41, 139, 184);
+  position:relative;
+  width:500px;
+  
+/*   I want my height to be a total of 700px, but there's a 20px padding all around, so I'm giving it a height of 660px (700 - 20 - 20) */
+  height:660px; 
+  padding:20px;
+  
+/*   This makes it horizontally centered */
+/*   It only works on "display:block" elements */
+  margin: auto;
+  
+/*   This makes it centered vertically */
+/*   It's 50% of the height, and subtracting half of the total height of the poster (which is 700px)'*/  
+  margin-top:calc(50vh - 350px);
+}

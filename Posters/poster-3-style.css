@@ -1,0 +1,35 @@
+body{
+    background-color:red;
+}
+#burst-12 {
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+  }
+  #burst-12:before,
+  #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: rgb(255, 255, 255);
+  }
+  #burst-12:before {
+    transform: rotate(30deg);
+  }
+  #burst-12:after {
+    transform: rotate(60deg);
+  }
+  h1{
+    color:white;
+    font-size:500px;
+  }
+  h2{
+  color:blue;
+  font-size:200px;
+  }

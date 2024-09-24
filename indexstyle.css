@@ -1,6 +1,21 @@
 body {
         font-family: "Space Mono", monospace;
+        background-color: #d8e303;
         font-weight: 400;
         font-style: normal;
+        color: #1c1c1c;
+        display: grid;
+        justify-items: center;
+        align-items: center;
       }
+h1{
+  font-size: 90px;
+  font-family: "Rubik Glitch Pop", system-ui;
+  margin-bottom: 0px;
+}
+.rubik-glitch-pop-regular {
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
       

@@ -22,8 +22,12 @@ h1{
     top:200px;
     left:50px;
     transform:rotate(-90deg);
+    transition: 0.3s;
 }
+h1:hover {
+  color:pink;
 
+}
 h2{
   font-size:40px;
   font-family: Helvetica, sans-serif;
@@ -32,8 +36,12 @@ h2{
   line-height:35px;
   top:175px;
   left:175px;
+  transition: 0.5s;
 }
+h2:hover{
+  color:black;
 
+}
 
 .description {
   font-size:15px;
@@ -42,8 +50,11 @@ h2{
   position:absolute;
   top:530px;
   left:175px;
+  transition: 0.3s;
 }
-
+.description:hover{
+  text-transform: uppercase;
+}
 
 .container{
   background:rgb(41, 139, 184);

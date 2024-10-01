@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(0, 0, 0);
+} 
+
+@media (max-width: 1500px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-1.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-2-v2.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-3.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-4.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 1100px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-5.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-6.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 900px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-7.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 800px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-8.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 700px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-9.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 600px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-10.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 500px) {
+  .image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/sarahbelay/Desktop/flower-10.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

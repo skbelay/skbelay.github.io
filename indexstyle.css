@@ -20,7 +20,7 @@ h1{
   font-style: normal;
 }
 @media (max-width: 1000px) {
-  .body{
+  body{
     background-color:azure;
   }
   }

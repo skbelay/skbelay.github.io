@@ -1,18 +1,35 @@
+body{
+    background-color:rgb(28, 0, 73)
+}
 .container {
-    display: grid; 
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    height: 100vh
+    display: flex; 
+    place-items:center;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 20px;
 }
-.container div{
+.letter{
+    width: 300px;
+    height: 300px;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-radius: 50%; 
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: transparent;
 }
-.b{
-    justify-content: center;
-    align-items: center;
+.fill {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: background-color 0.2s ease, border-radius 0.2s ease;
 
+
+}
+.fill:hover{
+    background-color: transparent;
+    opacity: 0.5;
+    border-radius: 0;
+}
+
+.blank {
+    background-color: transparent;
 }

@@ -87,3 +87,65 @@ body {
     position: absolute;
     z-index: 10;
 }
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+#hueSlider {
+    width: 200px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, 
+        hsl(0, 50%, 50%),
+        hsl(60, 50%, 50%),
+        hsl(120, 50%, 50%),
+        hsl(180, 50%, 50%),
+        hsl(240, 50%, 50%),
+        hsl(300, 50%, 50%),
+        hsl(360, 50%, 50%)
+    );
+    border-radius: 10px;
+    outline: none;
+}
+
+#hueSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-selector {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+.circle-1, .circle-2, .circle-4 {
+    transition: background-color 0.5s ease;
+}

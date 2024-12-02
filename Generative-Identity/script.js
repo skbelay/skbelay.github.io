@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function changeColor(color) {
         colorElements.forEach(element => {
-            element.style.transition = 'background-color 0.5s ease';
             element.style.backgroundColor = color;
         });
     }

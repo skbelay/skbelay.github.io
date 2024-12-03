@@ -11,10 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+    <script>
+        function updateTime() {
+            // Get the current time in New York
+            const now = new Date();
+            const options = { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true };
+            const nyTime = now.toLocaleTimeString("en-US", options);
+
+            // Update the content of the element with id="time"
+            document.getElementById("time").textContent = `It is currently ${nyTime} in New York City`;
+        }
+
+        // Update time immediately and every second
+        window.onload = () => {
+            updateTime();
+            setInterval(updateTime, 1000);
+        };
+    </script>
 </head>
 <body>
 <h1>✺ MY CLASS WEBSITE!</h1>
-<hr>
+
 <h2>Exercises</h2>
 <ul>
     <li><a href="recipe-1.html">Recipe Part 1</a></li>
@@ -32,6 +49,8 @@
     <li><a href="Generative-Identity/generative-identity.html">Generative Identity</a></li>
     <li><a href="Clock-Project/interactive-clock.html">Time Piece</a></li>
 </ul>
+
+<p id="time">Loading time...</p>
 Contact me at sarahkbelay@gmail.com : )
 </body>
 </html>

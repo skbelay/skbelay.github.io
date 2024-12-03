@@ -20,6 +20,7 @@ h1{
   font-weight: 400;
   font-style: normal;
 }
+
 @media (max-width: 1000px) {
   body{
     background-color:rgb(209, 50, 124);

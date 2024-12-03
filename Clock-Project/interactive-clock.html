@@ -113,7 +113,8 @@
             const hours = now.getHours();
 
             // Update day/night mode
-            document.body.classList.toggle('night-mode', isNightTime(hours));
+            const isNight = isNightTime(hours);
+            document.body.classList.toggle('night-mode', isNight);
 
             // Update time display
             const timeString = now.toLocaleTimeString('en-US', {
@@ -129,15 +130,16 @@
             const starPath = document.getElementById('star-path');
             const baseSize = 100;
             const sizeVariation = 20;
-            const timeProgress = (hours * 3600 + minutes * 60 + seconds) / 86400; // Progress through the day (0 to 1)
-            const growthFactor = 50; // How much the star grows throughout the day
+            const timeProgress = (hours * 3600 + minutes * 60 + seconds) / 86400;
+            const growthFactor = 50;
             
             const breathingEffect = Math.sin(smoothSeconds * Math.PI / 30) * sizeVariation;
             const growthSize = timeProgress * growthFactor;
             const currentSize = baseSize + breathingEffect + growthSize;
             
             starPath.setAttribute('d', createStarPath(currentSize));
-            starPath.style.transform = `rotate(${smoothSeconds * 6}deg)`;
+            const rotationAngle = isNight ? -smoothSeconds * 6 : smoothSeconds * 6;
+            starPath.style.transform = `rotate(${rotationAngle}deg)`;
         }
 
         // Update every 16ms (approximately 60fps) for smoother animation

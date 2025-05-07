@@ -4,8 +4,8 @@ let xTranslate;
 let yTranslate;
 
 function preload(){
-  abcMono = loadFont('Periodical-Logo/Fonts/ABCGaisyrMono-Regular-Trial.otf')
-  abcRegular = loadFont('Periodical-Logo/Fonts/ABCGaisyr-Regular-Trial.otf')
+  abcMono = loadFont('Fonts/ABCGaisyrMono-Regular-Trial.otf');
+  abcRegular = loadFont('Fonts/ABCGaisyr-Regular-Trial.otf');
 }
 
 function setup() {
@@ -16,8 +16,9 @@ function setup() {
 function gotData(data) {
   waterLevel = (data.data[0].v)
   interp = constrain(map(waterLevel, 0.5, 5, -20, 20), -20, 20);
-  interp = 20
+
   // testing info
+  // interp = -20
   console.log(interp);
   xTranslate = map(interp, -20, 20, -6, 16);
   yTranslate = map(interp, -20, 20, 0, -4);
@@ -34,8 +35,8 @@ function draw() {
   textSize(95);
   textAlign(CENTER, CENTER);
   
-  text("An", 150, 250);
-  text("ther", 365, 250)
+  text("An", 145, 250);
+  text("ther", 370, 250)
 
   
   push();
